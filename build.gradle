@@ -26,3 +26,16 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+version = '0.0.1'
+group = 'com.mvvm.kotlin.myapplication'
+
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact("app.debug"+".apk") {
+                extension 'apk'
+            }
+        }
+    }
