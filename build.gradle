@@ -40,3 +40,14 @@ publishing {
         }
     }
  }   
+
+repositories {
+        maven {
+            name 'nexus'
+            url "http://54.226.124.80:8081/repository/apk/"
+            credentials {
+                username "admin"
+                password "deep"
+            }  
+          }
+      }
