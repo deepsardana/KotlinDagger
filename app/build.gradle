@@ -21,6 +21,13 @@ android {
     }
     buildTypes {
         release {
+           firebaseAppDistribution {
+             releaseNotes = "Test Notes"
+             serviceCredentialsFile = "/home/ubuntu/service.json"
+             groups=”deep”
+           }
+        
+        
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
