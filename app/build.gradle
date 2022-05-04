@@ -21,16 +21,17 @@ android {
     }
     buildTypes {
         release {
-           firebaseAppDistribution {
-             releaseNotes = "Test Notes"
-             serviceCredentialsFile = "$home/service.json
-           }
-        
-        
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+    debug{
+        firebaseAppDistribution {
+          serviceCredentialsFile="$root/service/json"
+          groups="android-testers-1"    
+            
         }
     }
+  }   
 }
 
 dependencies {
