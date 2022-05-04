@@ -23,8 +23,7 @@ android {
         release {
            firebaseAppDistribution {
              releaseNotes = "Test Notes"
-             serviceCredentialsFile = "/home/ubuntu/service.json"
-             groups = ”deep”
+             serviceCredentialsFile = "/home/ubuntu/service.json
            }
         
         
