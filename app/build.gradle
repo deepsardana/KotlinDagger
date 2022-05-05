@@ -22,6 +22,7 @@ android {
     buildTypes {
         release {
             firebaseAppDistribution {
+                  serviceCredentialsFile="/home/ubuntu/service.json
                   artifactType="APK"
                   appId="1:823989738196:android:90241b9de55eb6cef2f941"
                   releaseNotes="Testing bugs"
