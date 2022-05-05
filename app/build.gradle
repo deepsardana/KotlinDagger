@@ -21,16 +21,14 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-    }
-    debug{
-        firebaseAppDistribution {
-          appID="1:823989738196:android:90241b9de55eb6cef2f941"
-          releaseNotes="Testing bugs"
-          testers="itsdeepsardana@gmail.com"
-            
-        }
+            firebaseAppDistribution {
+                  artifactType="APK"
+                  releaseNotes="Testing bugs"
+                  testers="itsdeepsardana@gmail.com"
+            }
+             minifyEnabled false
+             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'   
+     }
     }
   }   
 }
