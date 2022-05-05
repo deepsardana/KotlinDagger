@@ -26,7 +26,6 @@ android {
     }
     debug{
         firebaseAppDistribution {
-          serviceCredentialsFile="/home/ubuntu/service.json"
           appID="1:823989738196:android:90241b9de55eb6cef2f941"
           releaseNotes="Testing bugs"
           testers="itsdeepsardana@gmail.com"
